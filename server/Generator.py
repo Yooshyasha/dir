@@ -21,7 +21,7 @@ class Generator:
 
     def generate_token(self) -> str:
         return self._userid + '.' + choice(ascii_letters).upper() + ''.join(choice(ascii_letters + digits) \
-            for _ in range(5)) + "." + ''.join(choice(ascii_letters + digits + '-_') for _ in range(27))
+            for _ in range(5)) + "." + ''.join(choice(ascii_letters + digits + '-_') for _ in range(38))
 
     def random_proxy(self) -> str:
         return choice(self._proxy)
